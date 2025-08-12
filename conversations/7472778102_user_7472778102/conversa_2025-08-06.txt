@@ -1,0 +1,2 @@
+[2025-08-06 17:38:06] USUARIO (user_7472778102): boa
+[2025-08-06 17:38:07] BOT: Ocorreu um erro ao processar sua mensagem. Tente novamente mais tarde.

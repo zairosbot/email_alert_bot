@@ -1,0 +1,48 @@
+{
+  "nodes": [
+    {
+      "id": "1",
+      "parameters": {
+        "interval": 5,
+        "unit": "minutes"
+      },
+      "name": "Rodar a cada 5 minutos",
+      "type": "n8n-nodes-base.cron",
+      "typeVersion": 1,
+      "position": [
+        250,
+        200
+      ]
+    },
+    {
+      "id": "2",
+      "parameters": {
+        "command": "python \"C:\\Users\\MACA\\Desktop\\SCRIPTS\\email_alerta_bot.py\""
+      },
+      "name": "Executar Script Python",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        500,
+        200
+      ]
+    }
+  ],
+  "connections": {
+    "Rodar a cada 5 minutos": {
+      "main": [
+        [
+          {
+            "node": "Executar Script Python",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {},
+  "name": "Bot de Alertas do Gmail",
+  "tags": []
+}
